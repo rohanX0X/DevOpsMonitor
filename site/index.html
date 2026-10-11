@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Monitor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>DevOps Monitor</h1>
+        <p>Application Deployment & Health Dashboard</p>
+    </header>
+
+    <nav>
+        <a href="#overview">Overview</a>
+        <a href="#deployment">Deployment</a>
+        <a href="#monitoring">Monitoring</a>
+        <a href="#tools">DevOps Tools</a>
+    </nav>
+
+    <main>
+        <section id="overview">
+            <h2>Application Overview</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Application Status</h3>
+                    <p class="status">Running</p>
+                </div>
+                <div class="card">
+                    <h3>Latest Deployment</h3>
+                    <p>Build #1</p>
+                    <p class="status">Successful</p>
+                </div>
+                <div class="card">
+                    <h3>Open Issues</h3>
+                    <p class="number">3</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="deployment">
+            <h2>Deployment Pipeline</h2>
+            <div class="pipeline">
+                <div>GitHub<br><span>Code</span></div>
+                <div>Jenkins<br><span>Build</span></div>
+                <div>Docker<br><span>Package</span></div>
+                <div>Deploy<br><span>Application</span></div>
+            </div>
+            <p id="deployment-message">Demo deployment status: Successful</p>
+            <button id="deploy-button">Simulate Deployment</button>
+        </section>
+
+        <section id="monitoring">
+            <h2>System Monitoring</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>CPU Usage</h3>
+                    <p class="number" id="cpu">34%</p>
+                </div>
+                <div class="card">
+                    <h3>Memory Usage</h3>
+                    <p class="number" id="memory">58%</p>
+                </div>
+                <div class="card">
+                    <h3>Service Health</h3>
+                    <p class="status">Healthy</p>
+                </div>
+            </div>
+            <p class="note">Demo metrics only. Live monitoring will be integrated later.</p>
+        </section>
+
+        <section id="tools">
+            <h2>DevOps Tools</h2>
+            <div class="tools">
+                <div>Git & GitHub</div>
+                <div>Docker & Compose</div>
+                <div>Jenkins CI/CD</div>
+                <div>Prometheus</div>
+                <div>Grafana</div>
+                <div>Nagios</div>
+                <div>Jira</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>DevOps Monitor | Local Development Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
